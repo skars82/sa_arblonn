@@ -1,0 +1,4475 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<informationSet xmlns="ec/tss.core">
+    <item name="metadata">
+        <subset>
+            <item name="timestamp">
+                <string>30.jun.2021 14:21:39</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa1">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_00">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>1313.0 1225.0 1171.0 1203.0 1215.0 1241.0 1203.0 1235.0 1264.0 1148.0 1185.0 1636.0 1026.0 892.0 761.0 799.0 858.0 867.0 806.0 648.0 699.0 707.0 744.0 914.0 765.0 714.0 711.0 703.0 809.0 740.0 772.0 747.0 779.0 774.0 729.0 938.0 898.0 869.0 886.0 858.0 920.0 932.0 885.0 939.0 945.0 1014.0 1004.0 1227.0 1066.0 1080.0 1157.0 1226.0 1296.0 1361.0 1250.0 1259.0 1288.0 1307.0 1380.0 1586.0 1421.0 1491.0 1548.0 1608.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_00&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec1</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>7.397336885918931</value>
+        </param>
+    </item>
+    <item name="phi">
+        <params>
+            <coef type="Estimated">
+                <value>-0.9129502909887905</value>
+                <stde>0.0550155840778643</stde>
+                <tstat>-16.594394230127225</tstat>
+            </coef>
+        </params>
+    </item>
+    <item name="d">
+        <integer>0</integer>
+    </item>
+    <item name="bphi">
+        <params>
+            <coef type="Estimated">
+                <value>-0.6733671277388789</value>
+                <stde>0.09929201591527001</stde>
+                <tstat>-6.781684524498837</tstat>
+            </coef>
+        </params>
+    </item>
+    <item name="bd">
+        <integer>0</integer>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="LS (2021-02-01)">
+                <double>0.04350158141780293</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>-0.010537344398244478</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>0.009108228676211798</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>0.06654403665649283</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>-0.026762802580369206</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>0.025108314110621827</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>-0.025451816683933908</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>-0.04228475575837279</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>0.048916617370766614</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>0.018081071369152706</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>0.0899952157896134</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>0.06726473611848585</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>0.06312317909715091</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>0.04027178238419555</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="seasonal">
+<boolean>false</boolean>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>7.009114807642746</value>
+        </param>
+    </item>
+    <item name="phi">
+        <params>
+            <coef/>
+        </params>
+    </item>
+    <item name="d">
+        <integer>0</integer>
+    </item>
+    <item name="bphi">
+        <params>
+            <coef/>
+        </params>
+    </item>
+    <item name="bd">
+        <integer>0</integer>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="seasonal">
+<boolean>false</boolean>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa2">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_01_03">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>22374.0 22932.0 23843.0 25260.0 26871.0 29822.0 32264.0 33548.0 30736.0 30124.0 29379.0 36655.0 23869.0 24435.0 25674.0 26578.0 28347.0 31248.0 33528.0 35352.0 32925.0 32340.0 30514.0 36233.0 24943.0 25527.0 26582.0 27574.0 29198.0 31978.0 34443.0 35169.0 32556.0 31864.0 31054.0 36593.0 26062.0 26459.0 27256.0 28480.0 30246.0 32596.0 34799.0 36694.0 33660.0 33249.0 31987.0 36461.0 26850.0 27284.0 27971.0 28914.0 30303.0 32799.0 35099.0 36654.0 33969.0 33248.0 31844.0 36766.0 27348.0 27786.0 28665.0 29683.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_01_03&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec2</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>0.033955931597997036</value>
+        </param>
+    </item>
+    <item name="phi">
+        <params>
+            <coef type="Estimated">
+                <value>-0.5840498889534368</value>
+                <stde>0.133971740087158</stde>
+                <tstat>-4.359500657179428</tstat>
+            </coef>
+        </params>
+    </item>
+    <item name="d">
+        <integer>0</integer>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="LS (2021-02-01)">
+                <double>-1.4938071611699533E-4</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>0.010041023238301082</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>0.012800201913734596</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>-0.004468825967533729</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>-0.009199587803593605</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>0.010175159066978873</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>-0.009766602700814123</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>0.002218155821229469</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>0.004056195807228673</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>-0.013702440392547624</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>-0.011560747891939754</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>-0.006162111978795936</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>-0.009822015187192518</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>1.1251734318361389E-4</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>13</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>0.03393982940784166</value>
+        </param>
+    </item>
+    <item name="phi">
+        <params>
+            <coef/>
+        </params>
+    </item>
+    <item name="d">
+        <integer>0</integer>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>13</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa3">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_05_09">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>61139.0 60861.0 60409.0 59989.0 59476.0 59069.0 58711.0 57879.0 57258.0 56087.0 55536.0 54890.0 53996.0 53939.0 55277.0 55191.0 55103.0 55922.0 56324.0 56400.0 55947.0 55662.0 55707.0 55745.0 54332.0 54360.0 54492.0 54840.0 55001.0 55302.0 55903.0 56093.0 56147.0 55500.0 56394.0 56522.0 56513.0 56905.0 57466.0 57654.0 57994.0 58506.0 59929.0 60208.0 60276.0 61438.0 61583.0 61678.0 61621.0 61964.0 62150.0 60961.0 60973.0 60815.0 59556.0 61079.0 60961.0 61171.0 61321.0 61148.0 60774.0 60858.0 61016.0 60949.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_05_09&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec3</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="phi">
+        <params>
+            <coef type="Estimated">
+                <value>-0.08054500124246602</value>
+                <stde>0.10022394005372763</stde>
+                <tstat>-0.8036503174719313</tstat>
+            </coef>
+            <coef type="Estimated">
+                <value>0.7606488211589936</value>
+                <stde>0.09894148704406905</stde>
+                <tstat>7.687865261416545</tstat>
+            </coef>
+        </params>
+    </item>
+    <item name="d">
+        <integer>2</integer>
+    </item>
+    <item name="theta">
+        <params>
+            <coef type="Estimated">
+                <value>-0.7243532567598236</value>
+                <stde>0.09439990763217508</stde>
+                <tstat>-7.673241160173937</tstat>
+            </coef>
+            <coef type="Estimated">
+                <value>0.9999999842594695</value>
+                <stde>0.09789693932149691</stde>
+                <tstat>10.214823784995312</tstat>
+            </coef>
+        </params>
+    </item>
+    <item name="bd">
+        <integer>0</integer>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="LS (2021-02-01)">
+                <double>3.664860728849226E-4</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>-0.005499070570750222</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>-0.0024678051820897036</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>6.068550050721637E-4</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>0.0017299840884606272</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>-7.367359007128081E-4</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>0.02658050277331625</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>-0.023396357867251617</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>-0.005648706929112334</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>0.0020858037899324413</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>-0.016145420775724905</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>-1.9432066925697346E-4</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>-0.001230434337712323</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>0.0012332242646720594</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="seasonal">
+<boolean>false</boolean>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="phi">
+        <params>
+            <coef/>
+            <coef/>
+        </params>
+    </item>
+    <item name="d">
+        <integer>2</integer>
+    </item>
+    <item name="theta">
+        <params>
+            <coef/>
+            <coef/>
+        </params>
+    </item>
+    <item name="bd">
+        <integer>0</integer>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="seasonal">
+<boolean>false</boolean>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa4">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_10_33">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>213122.0 213708.0 214405.0 214492.0 213477.0 215883.0 217418.0 216507.0 213977.0 213971.0 213112.0 211741.0 207959.0 208641.0 209012.0 208468.0 209091.0 212097.0 215358.0 215252.0 212473.0 212210.0 212275.0 211724.0 207683.0 208393.0 210094.0 209650.0 210620.0 214127.0 217411.0 218020.0 215597.0 215290.0 216022.0 215894.0 212265.0 214491.0 215654.0 216124.0 217231.0 219851.0 222890.0 222673.0 219440.0 219372.0 219073.0 217349.0 214405.0 215832.0 215583.0 211661.0 211013.0 211895.0 213837.0 213690.0 212365.0 212646.0 213160.0 213425.0 207700.0 208707.0 210385.0 209910.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_10_33&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec4</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="d">
+        <integer>2</integer>
+    </item>
+    <item name="theta">
+        <params>
+            <coef type="Estimated">
+                <value>-0.8090954068099087</value>
+                <stde>0.10701422733702498</stde>
+                <tstat>-7.560634010483355</tstat>
+            </coef>
+        </params>
+    </item>
+    <item name="btheta">
+        <params>
+            <coef type="Estimated">
+                <value>-0.9997516240721215</value>
+                <stde>0.2275597632964981</stde>
+                <tstat>-4.393358516415308</tstat>
+            </coef>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="LS (2021-02-01)">
+                <double>-0.00235363389574506</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>-0.011497075004046505</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>0.004351912281367218</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>0.0015586227816687408</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>7.955718023741849E-4</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>0.005140556520403327</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>-0.0012477920704027185</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>-0.004976906238667577</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>-0.010602029128792613</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>-0.006334755460505941</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>-0.019102433837318283</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>-0.007073857471470959</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>-0.0038715306455532027</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>0.0012194879830202193</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="d">
+        <integer>2</integer>
+    </item>
+    <item name="theta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+    <item name="btheta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa5">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_35_39">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>29705.0 29681.0 29679.0 29866.0 30115.0 30177.0 31795.0 31705.0 31157.0 30801.0 30896.0 31151.0 30651.0 30433.0 30696.0 30604.0 30711.0 30900.0 32183.0 32075.0 30865.0 30968.0 31002.0 31231.0 30905.0 31034.0 31120.0 31118.0 31264.0 31582.0 32750.0 32892.0 32138.0 31842.0 31820.0 32117.0 31542.0 31605.0 31795.0 31962.0 32089.0 32447.0 33650.0 33753.0 32962.0 32719.0 32714.0 32458.0 32289.0 32401.0 32539.0 32444.0 32559.0 32797.0 34074.0 34109.0 33550.0 33357.0 33306.0 33636.0 32916.0 32986.0 33170.0 33298.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_35_39&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec5</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="phi">
+        <params>
+            <coef type="Estimated">
+                <value>0.47087533532011555</value>
+                <stde>0.14695020751279694</stde>
+                <tstat>3.2043189546303297</tstat>
+            </coef>
+        </params>
+    </item>
+    <item name="bphi">
+        <params>
+            <coef type="Estimated">
+                <value>0.6468608623559232</value>
+                <stde>0.1248943500663859</stde>
+                <tstat>5.179264410376395</tstat>
+            </coef>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>TC.2017-09-01 LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="TC (2017-09-01)">
+                <double>-0.018254917210216732</double>
+            </item>
+            <item name="LS (2021-02-01)">
+                <double>-3.773991194414946E-4</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>-0.008091523445560156</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>0.006647755003886827</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>-9.93417217532287E-4</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>0.0028763524487300527</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>0.006926097937532555</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>-0.0027605160103453797</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>0.002015668487019666</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>-0.003020567520616712</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>-5.00013994152452E-4</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>-0.004516505166938188</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>0.001376477182422638</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>-9.38418497502056E-5</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>6.790977721784769E-4</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="phi">
+        <params>
+            <coef/>
+        </params>
+    </item>
+    <item name="bphi">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>TC.2017-09-01 LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa6">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_41_43">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>196647.0 198978.0 200209.0 201549.0 204679.0 209200.0 211913.0 213145.0 214557.0 216101.0 216803.0 217185.0 207120.0 209478.0 211952.0 212787.0 215358.0 220766.0 223116.0 224711.0 225351.0 226597.0 227183.0 226962.0 216036.0 218622.0 220173.0 220265.0 223860.0 228397.0 230729.0 233159.0 233845.0 235125.0 236511.0 235346.0 225518.0 228839.0 230932.0 231091.0 233016.0 236753.0 239024.0 240185.0 239991.0 240914.0 241473.0 239292.0 229260.0 232203.0 233416.0 230582.0 230286.0 232612.0 235054.0 235687.0 238102.0 236998.0 239102.0 238639.0 228805.0 229938.0 231128.0 229823.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_41_43&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec4</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>-0.0010079676394692046</value>
+        </param>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="LS (2021-02-01)">
+                <double>-0.006807695797788716</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>0.00175396309650356</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>0.008142780379199585</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>0.007528862221374726</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>-0.007478084063037509</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>0.01201050446292729</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>-0.0011481482144930428</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>0.0019048514335977614</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>-0.004852500442788393</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>-0.008572113595577628</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>-0.011896031609979867</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>-0.00288634745830873</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>-0.004334564345397569</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>-0.001926697841421619</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>-0.0010079676394692046</value>
+        </param>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa7">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_45_47">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>348861.0 343156.0 342278.0 345092.0 347295.0 352906.0 356439.0 355449.0 347195.0 345996.0 348222.0 353169.0 350373.0 344829.0 344892.0 346881.0 350407.0 355032.0 359154.0 358119.0 349818.0 347921.0 349370.0 354013.0 352287.0 345022.0 344155.0 346774.0 350453.0 355812.0 359809.0 357875.0 349356.0 347635.0 350281.0 353670.0 347625.0 344213.0 343517.0 345767.0 349620.0 352298.0 357178.0 355895.0 347146.0 346089.0 347301.0 349674.0 347525.0 341563.0 340403.0 334445.0 337246.0 337956.0 344340.0 344861.0 338705.0 339724.0 343433.0 349545.0 344990.0 337782.0 337715.0 337690.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_45_47&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec2</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="d">
+        <integer>0</integer>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="LS (2021-02-01)">
+                <double>-0.0038102514856657157</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>-0.006952190646646997</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>0.010830814297072788</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>0.007362646759963457</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>0.0060534745254141615</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>0.0068783875371813885</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>0.005110409379573968</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>0.004956983245143931</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>-0.00552748285381455</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>-0.0027415197274400695</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>-0.024186305120588614</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>-0.009106391154990238</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>-0.006602566490421671</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>-0.005902831203904676</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>13</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="d">
+        <integer>0</integer>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>13</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa8">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_49_53">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>133948.0 134235.0 133769.0 133943.0 134761.0 136242.0 138677.0 138922.0 137176.0 135251.0 134396.0 134263.0 132599.0 131942.0 131582.0 132070.0 132487.0 134567.0 136861.0 137105.0 135356.0 134370.0 133374.0 133971.0 131584.0 131683.0 131781.0 132381.0 133352.0 134866.0 136521.0 137273.0 135413.0 134130.0 134392.0 134426.0 132178.0 132619.0 131906.0 132671.0 133448.0 135572.0 137844.0 138171.0 136140.0 135072.0 134047.0 134238.0 132846.0 132826.0 132148.0 127514.0 126116.0 123560.0 126349.0 127669.0 127136.0 126866.0 126038.0 125106.0 121521.0 120631.0 120277.0 120543.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_49_53&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec2</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>4.293794827545023E-4</value>
+        </param>
+    </item>
+    <item name="btheta">
+        <params>
+            <coef type="Estimated">
+                <value>-0.9999191358614531</value>
+                <stde>0.3148665457360292</stde>
+                <tstat>-3.175691890429487</tstat>
+            </coef>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="LS (2021-02-01)">
+                <double>-0.008860048317772807</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>-0.015713464719900046</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>-0.009783735121354846</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>-0.00275949025982001</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>0.006510409054583027</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>0.008227233654968831</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>0.006467356054646609</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>0.0053888849700986</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>-0.0349456954884118</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>-0.01769463649094178</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>-0.04060160902606768</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>-0.0034767837356929226</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>-0.0031255246397880487</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>-0.0017275521732483074</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>13</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>4.29379482642019E-4</value>
+        </param>
+    </item>
+    <item name="btheta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>13</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa9">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_55_56">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>85913.0 86346.0 87543.0 88820.0 90800.0 96812.0 99500.0 101092.0 96273.0 93157.0 92503.0 93436.0 88887.0 89635.0 90850.0 92436.0 95598.0 101212.0 105029.0 105825.0 101705.0 97740.0 96338.0 97084.0 92808.0 92714.0 93363.0 95354.0 97852.0 103487.0 107538.0 108102.0 103633.0 99001.0 97933.0 99043.0 95210.0 95077.0 95995.0 97170.0 101047.0 106339.0 110455.0 111075.0 105985.0 101775.0 100499.0 101545.0 97870.0 98166.0 96014.0 83534.0 79427.0 75964.0 85988.0 94019.0 90983.0 86879.0 82785.0 78854.0 71929.0 65949.0 65410.0 62943.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_55_56&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec4</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="phi">
+        <params>
+            <coef type="Estimated">
+                <value>0.41312096207704796</value>
+                <stde>0.15117647801741577</stde>
+                <tstat>2.7327066187469704</tstat>
+            </coef>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="LS (2021-02-01)">
+                <double>-0.08981777029873513</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>-0.055056273158841915</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>-0.05900375668362951</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>-0.035651194798092915</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>-0.0056269977749706206</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>0.014092933328479093</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>0.08366972564248179</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>0.08602527403842668</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>-0.09575384561794402</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>-0.08922762554362801</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>-0.15216016635269286</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>-0.029949863375011355</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>-0.05136550245555897</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>-0.015990473284593416</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="phi">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa10">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_58_63">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>84887.0 85390.0 85952.0 85555.0 85330.0 85548.0 85390.0 85770.0 86296.0 86275.0 86337.0 86765.0 85563.0 85949.0 86126.0 86001.0 86330.0 86764.0 86730.0 87564.0 87923.0 87942.0 88150.0 88596.0 87591.0 88353.0 88884.0 88863.0 89365.0 89883.0 89756.0 90608.0 91277.0 91560.0 91639.0 92276.0 91646.0 92614.0 93304.0 93752.0 93901.0 94620.0 94942.0 95938.0 96293.0 96193.0 96830.0 97032.0 96037.0 96953.0 97344.0 96696.0 96455.0 96283.0 96227.0 96767.0 97615.0 98490.0 98958.0 99549.0 98089.0 99157.0 99836.0 100193.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_58_63&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec4</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>0.0011294423923639356</value>
+        </param>
+    </item>
+    <item name="btheta">
+        <params>
+            <coef type="Estimated">
+                <value>-0.9998080797481353</value>
+                <stde>0.22489206379629803</stde>
+                <tstat>-4.445724152603883</tstat>
+            </coef>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="LS (2021-02-01)">
+                <double>-3.732783047585623E-4</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>-0.006969144223945239</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>-0.0016198808659114293</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>-7.189836836526577E-4</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>0.005592915181349371</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>5.87728275196864E-4</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>-0.0057010648977551225</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>-0.003341092288347498</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>-0.009851839960558884</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>-0.00742060749913862</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>-0.009120604870976427</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>-0.004306809877884523</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>-1.5009686537299002E-6</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>-0.002636636770332988</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>0.001129442386479622</value>
+        </param>
+    </item>
+    <item name="btheta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa11">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_64_66">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>46777.0 46905.0 46928.0 46744.0 46488.0 46348.0 46826.0 46463.0 46087.0 45917.0 45995.0 46181.0 45866.0 46003.0 46084.0 45915.0 45780.0 46030.0 46390.0 45936.0 45678.0 45418.0 45466.0 45719.0 45379.0 45408.0 45536.0 45549.0 45525.0 45757.0 46060.0 45958.0 45724.0 45722.0 45847.0 46017.0 46013.0 46131.0 46343.0 46187.0 46271.0 46535.0 46749.0 46722.0 46539.0 46511.0 46725.0 46879.0 46895.0 46935.0 46953.0 46903.0 46781.0 46827.0 47517.0 47412.0 47435.0 47595.0 47805.0 48030.0 47793.0 47865.0 47981.0 47993.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_64_66&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec4</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="bphi">
+        <params>
+            <coef type="Estimated">
+                <value>-0.8240536007517759</value>
+                <stde>0.06681502999633154</stde>
+                <tstat>-12.33335674319117</tstat>
+            </coef>
+        </params>
+    </item>
+    <item name="bd">
+        <integer>0</integer>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="LS (2021-02-01)">
+                <double>8.027702368202768E-4</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>-0.005227835394510436</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>0.0019840631994796727</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>6.196968819684476E-4</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>0.003863298558966387</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>0.0037189694422217513</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>-0.0017361088545940746</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>0.010846702640866642</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>-0.003705468296225646</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>-0.004101841504826673</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>0.0017131499005440872</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>-0.003394916585360375</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>0.0025397929398496004</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>-6.930138994227476E-4</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="bphi">
+        <params>
+            <coef/>
+        </params>
+    </item>
+    <item name="bd">
+        <integer>0</integer>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa12">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_68_75">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>146361.0 146477.0 147319.0 147691.0 147715.0 149229.0 147620.0 148530.0 149468.0 149224.0 150114.0 152033.0 146863.0 148428.0 148931.0 149201.0 150024.0 152294.0 151299.0 151909.0 153404.0 153457.0 154213.0 157634.0 151467.0 152951.0 153597.0 154511.0 155708.0 157577.0 157190.0 158086.0 159060.0 159472.0 160650.0 163076.0 157259.0 158543.0 159343.0 160058.0 161148.0 162336.0 161328.0 162022.0 163021.0 163249.0 163800.0 165707.0 160836.0 162370.0 162185.0 159770.0 159568.0 160137.0 159030.0 159731.0 160709.0 160992.0 161311.0 163864.0 159527.0 160421.0 161719.0 161966.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_68_75&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec4</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="btheta">
+        <params>
+            <coef type="Estimated">
+                <value>-0.9998966489427231</value>
+                <stde>0.20320942777842446</stde>
+                <tstat>-4.920522929836654</tstat>
+            </coef>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="LS (2021-02-01)">
+                <double>-0.0021647934972053545</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>0.008342299411279116</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>4.008905737503734E-4</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>-0.0034180193451302954</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>0.0010853662996990387</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>-9.903419484117472E-4</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>-6.381364364771686E-4</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>-4.160474794748016E-4</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>-0.007563392871553006</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>-0.006306991025877938</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>-0.01868822009821225</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>-0.005730758985494065</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>-0.0021596667188333828</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>0.0034679153006275843</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="btheta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa13">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_77_82">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>123869.0 125223.0 126397.0 128403.0 130374.0 135830.0 138018.0 138256.0 138237.0 137235.0 137268.0 136835.0 130379.0 131210.0 133132.0 133457.0 137239.0 144377.0 148169.0 147359.0 145821.0 144074.0 144262.0 144128.0 137742.0 138967.0 140595.0 141011.0 144587.0 151222.0 153170.0 152814.0 151927.0 150871.0 150440.0 150228.0 142137.0 144419.0 146467.0 147662.0 149928.0 155601.0 158196.0 156996.0 154592.0 152792.0 152576.0 150534.0 144696.0 145003.0 143648.0 135779.0 135272.0 133063.0 137164.0 136059.0 138516.0 139109.0 138957.0 138683.0 134207.0 132602.0 132790.0 133486.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_77_82&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec4</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>-0.0012091455217816357</value>
+        </param>
+    </item>
+    <item name="btheta">
+        <params>
+            <coef type="Estimated">
+                <value>-0.9999138689737791</value>
+                <stde>0.2830400638389408</stde>
+                <tstat>-3.5327644270980776</tstat>
+            </coef>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="LS (2021-02-01)">
+                <double>-0.017229001803072398</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>0.017357092661961115</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>0.005792271697509232</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>0.0026123608945986085</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>0.016798432013911364</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>0.02889050911643849</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>-0.0016407702986896736</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>0.015566258776983309</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>-0.05686907116748814</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>-0.02158085699554342</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>-0.06063054361747703</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>-0.018766179465400143</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>0.002143570937439863</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>-0.006751692273460157</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>-0.0012091455218526759</value>
+        </param>
+    </item>
+    <item name="btheta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa14">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_84">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>163959.0 164173.0 164478.0 164947.0 165139.0 164925.0 165773.0 165540.0 166475.0 166379.0 166808.0 167105.0 166072.0 165890.0 165955.0 166041.0 166438.0 167883.0 167706.0 167721.0 168973.0 168441.0 169047.0 170122.0 168143.0 168473.0 168267.0 168629.0 168286.0 169275.0 170017.0 170022.0 169685.0 169382.0 169900.0 171266.0 169606.0 169002.0 168884.0 169791.0 169182.0 170644.0 171245.0 171032.0 170376.0 170754.0 170369.0 171724.0 170377.0 170281.0 170274.0 169275.0 170267.0 170999.0 169538.0 172015.0 171854.0 172371.0 173671.0 173694.0 172833.0 173160.0 173089.0 173672.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_84&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec2</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="theta">
+        <params>
+            <coef type="Estimated">
+                <value>-0.5992841848461086</value>
+                <stde>0.13459232246734526</stde>
+                <tstat>-4.452588185269681</tstat>
+            </coef>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="LS (2021-02-01)">
+                <double>0.0024538273507186408</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>0.002905588082986909</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>-0.00778943830999346</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>0.009770825442029013</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>7.876866523854879E-4</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>0.0029065109174926103</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>0.01574919796644636</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>-0.012096382632591943</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>-0.00431454118611363</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>0.009436392234652757</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>-0.011240473107932303</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>0.0026225888234598714</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>-0.001993630516139431</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>0.00225358869563228</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>13</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="theta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>13</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa15">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_85">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>207648.0 209553.0 210808.0 211721.0 212209.0 213491.0 206610.0 197401.0 204672.0 210248.0 212916.0 216542.0 211037.0 214184.0 215440.0 216518.0 215405.0 218614.0 209719.0 199633.0 206071.0 213386.0 216955.0 221558.0 214773.0 218653.0 219560.0 219584.0 219687.0 222706.0 213366.0 203203.0 209874.0 216966.0 219783.0 224391.0 218225.0 221436.0 222333.0 223569.0 222189.0 225556.0 216040.0 207214.0 214195.0 220792.0 223486.0 228004.0 218879.0 224534.0 224403.0 221263.0 216224.0 218523.0 210572.0 205145.0 213585.0 221460.0 224895.0 229307.0 221674.0 224406.0 225727.0 226679.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_85&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec4</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>0.01626109277979609</value>
+        </param>
+    </item>
+    <item name="d">
+        <integer>0</integer>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="LS (2021-02-01)">
+                <double>-0.013259000554731034</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>0.006990224006313965</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>-5.863099136575821E-4</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>0.0032639499368656206</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>0.005872839577206088</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>0.007183094319824333</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>0.01560090884063926</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>0.006041254657061377</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>-0.0044637293273996756</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>-0.016845411643783947</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>-0.01963533656319606</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>-0.006993808232676528</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>-0.0013352179508352537</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>-5.408141648747755E-4</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>0.01626109277979609</value>
+        </param>
+    </item>
+    <item name="d">
+        <integer>0</integer>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa16">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_86_88">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>515663.0 526888.0 525412.0 527478.0 527440.0 529145.0 541518.0 544009.0 543363.0 535421.0 535085.0 533464.0 532092.0 534661.0 532514.0 533710.0 534659.0 538208.0 547021.0 550638.0 547178.0 539302.0 540129.0 540766.0 536168.0 540066.0 538436.0 538491.0 539203.0 542915.0 553777.0 557218.0 553749.0 546684.0 546024.0 546554.0 544369.0 545778.0 544622.0 544490.0 545185.0 549396.0 559020.0 561831.0 558930.0 551281.0 550675.0 551027.0 543863.0 548107.0 546771.0 544837.0 545290.0 549375.0 559634.0 562950.0 557030.0 551454.0 555053.0 559323.0 555846.0 556903.0 555592.0 557996.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_86_88&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec4</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+    <item name="adjust">
+        <string>LeapYear</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>-6.633496599852565E-4</value>
+        </param>
+    </item>
+    <item name="bphi">
+        <params>
+            <coef type="Estimated">
+                <value>0.7071834800861209</value>
+                <stde>0.10904129837178635</stde>
+                <tstat>6.485464595945232</tstat>
+            </coef>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="tradingdays">
+        <subset>
+            <item name="option">
+                <string>WorkingDays</string>
+            </item>
+            <item name="leapyear">
+                <string>LeapYear</string>
+            </item>
+            <item name="autoadjust">
+                <boolean>false</boolean>
+            </item>
+            <item name="holidays">
+                <string>Norsk_kalender</string>
+            </item>
+        </subset>
+    </item>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="td">
+                <double>2.0306641626130565E-5</double>
+            </item>
+            <item name="lp">
+                <double>-0.029317148033471588</double>
+            </item>
+            <item name="LS (2021-02-01)">
+                <double>4.618642008226076E-4</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>0.0018959185985508214</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>0.00768009845206312</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>0.008793167835323015</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>0.004379728243632386</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>-0.0037496765660324266</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>0.0013625258081390033</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>5.317541737169123E-4</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>0.0014287746124836092</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>6.261555758756146E-4</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>-0.0022405987155590945</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>0.007052552705112831</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>0.006124279218542823</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>0.0012575188429784767</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+    <item name="adjust">
+        <string>LeapYear</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>-6.892971409929812E-4</value>
+        </param>
+    </item>
+    <item name="bphi">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="tradingdays">
+        <subset>
+            <item name="option">
+                <string>WorkingDays</string>
+            </item>
+            <item name="leapyear">
+                <string>LeapYear</string>
+            </item>
+            <item name="autoadjust">
+                <boolean>false</boolean>
+            </item>
+            <item name="holidays">
+                <string>Norsk_kalender</string>
+            </item>
+        </subset>
+    </item>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="sa17">
+        <subset>
+            <item name="ts">
+                <ts name="lonnstakere_v2&#xA;NA_90_99">
+                    <freq>12</freq>
+                    <firstYear>2016</firstYear>
+                    <firstPeriod>1</firstPeriod>
+                    <data>84900.0 87159.0 88247.0 89007.0 88524.0 92467.0 89875.0 89561.0 90274.0 89726.0 88459.0 92149.0 87680.0 89438.0 90798.0 91430.0 91584.0 94668.0 92320.0 92195.0 92518.0 92027.0 91124.0 95088.0 88544.0 91464.0 92858.0 93616.0 93666.0 96373.0 94570.0 94156.0 94337.0 93878.0 93594.0 96922.0 91872.0 93698.0 94881.0 95369.0 95419.0 98211.0 96291.0 96103.0 96516.0 96795.0 95432.0 98730.0 93082.0 94718.0 95545.0 88499.0 85866.0 87097.0 89153.0 91870.0 92849.0 93228.0 92324.0 94460.0 88652.0 89096.0 90933.0 90033.0</data>
+                    <metaData>
+                        <property name="@timestamp" value="Wed Jun 30 15:34:20 CEST 2021"/>
+                        <property name="@source" value="XCLPRVDR"/>
+                        <property name="@id" value="demetra://tsprovider/XCLPRVDR/20111201/SERIES?file=%2Fssb%2Fstamme03%2Farbtaker%2FA_ordningen%2Fprog%2Fmndpub%2Fsesongjustering%2Finput%2Flonnstakere_v2.xlsx#seriesName=NA_90_99&amp;sheetName=lonnstakere_v2"/>
+                    </metaData>
+                </ts>
+            </item>
+            <item name="domainspec">
+                <string>spec4</string>
+            </item>
+            <item name="pointspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>0.022944635911789194</value>
+        </param>
+    </item>
+    <item name="d">
+        <integer>0</integer>
+    </item>
+    <item name="bphi">
+        <params>
+            <coef type="Estimated">
+                <value>0.6298243975494905</value>
+                <stde>0.12446715365708332</stde>
+                <tstat>5.060165505870775</tstat>
+            </coef>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+    <item name="coefficients">
+        <subset>
+            <item name="LS (2021-02-01)">
+                <double>-0.013849092296945835</double>
+            </item>
+            <item name="LS (2021-01-01)">
+                <double>-0.007949510644082218</double>
+            </item>
+            <item name="LS (2020-12-01)">
+                <double>-0.0117105673005957</double>
+            </item>
+            <item name="LS (2020-11-01)">
+                <double>-0.0025861380398868646</double>
+            </item>
+            <item name="LS (2020-10-01)">
+                <double>0.006076972661378652</double>
+            </item>
+            <item name="LS (2020-09-01)">
+                <double>0.007802996982369606</double>
+            </item>
+            <item name="LS (2020-08-01)">
+                <double>0.03350722336629682</double>
+            </item>
+            <item name="LS (2020-07-01)">
+                <double>0.04253479225333608</double>
+            </item>
+            <item name="LS (2020-06-01)">
+                <double>-0.014385764042203717</double>
+            </item>
+            <item name="LS (2020-05-01)">
+                <double>-0.030733632890791136</double>
+            </item>
+            <item name="LS (2020-04-01)">
+                <double>-0.08362551423545007</double>
+            </item>
+            <item name="LS (2020-03-01)">
+                <double>-0.01684786705580963</double>
+            </item>
+            <item name="LS (2021-04-01)">
+                <double>-0.01577618626332217</double>
+            </item>
+            <item name="LS (2021-03-01)">
+                <double>0.0030516462855142475</double>
+            </item>
+            <item name="LS (2021-06-01)">
+                <double>0.0</double>
+            </item>
+            <item name="LS (2021-05-01)">
+                <double>0.0</double>
+            </item>
+        </subset>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="estimationspec">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="mu">
+        <param type="Estimated">
+            <value>0.022959859433468288</value>
+        </param>
+    </item>
+    <item name="d">
+        <integer>0</integer>
+    </item>
+    <item name="bphi">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>false</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="quality">
+                <string>Severe</string>
+            </item>
+            <item name="policy">
+                <string>FreeParameters</string>
+            </item>
+        </subset>
+    </item>
+    <item name="domainspecs">
+        <subset>
+            <item name="spec1">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="theta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+    <item name="btheta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>true</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="tradingdays">
+        <subset>
+            <item name="option">
+                <string>WorkingDays</string>
+            </item>
+            <item name="leapyear">
+                <string>LeapYear</string>
+            </item>
+            <item name="holidays">
+                <string>Norsk_kalender</string>
+            </item>
+            <item name="test">
+                <string>Remove</string>
+            </item>
+        </subset>
+    </item>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="seasonal">
+<boolean>false</boolean>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="spec2">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="theta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+    <item name="btheta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>true</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="tradingdays">
+        <subset>
+            <item name="option">
+                <string>WorkingDays</string>
+            </item>
+            <item name="leapyear">
+                <string>LeapYear</string>
+            </item>
+            <item name="holidays">
+                <string>Norsk_kalender</string>
+            </item>
+            <item name="test">
+                <string>Remove</string>
+            </item>
+        </subset>
+    </item>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>13</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="spec3">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="theta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+    <item name="btheta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>true</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="tradingdays">
+        <subset>
+            <item name="option">
+                <string>WorkingDays</string>
+            </item>
+            <item name="leapyear">
+                <string>LeapYear</string>
+            </item>
+            <item name="holidays">
+                <string>Norsk_kalender</string>
+            </item>
+            <item name="test">
+                <string>Remove</string>
+            </item>
+        </subset>
+    </item>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="seasonal">
+<boolean>false</boolean>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="spec4">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="theta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+    <item name="btheta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>true</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="tradingdays">
+        <subset>
+            <item name="option">
+                <string>WorkingDays</string>
+            </item>
+            <item name="leapyear">
+                <string>LeapYear</string>
+            </item>
+            <item name="holidays">
+                <string>Norsk_kalender</string>
+            </item>
+            <item name="test">
+                <string>Remove</string>
+            </item>
+        </subset>
+    </item>
+    <item name="outliers">
+        <strings>
+            <items>LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+            <item name="spec5">
+                <subset>
+                    <item name="algorithm">
+                        <method version="0.1.0.0">
+                            <name>x13</name>
+                            <family>Seasonal adjustment</family>
+                        </method>
+                    </item>
+                    <item name="regarima">
+                        <subset>
+                            <item name="algorithm">
+<method version="0.1.0.0">
+    <name>regarima</name>
+    <family>Modelling</family>
+</method>
+                            </item>
+                            <item name="transform">
+<subset>
+    <item name="function">
+        <string>Log</string>
+    </item>
+</subset>
+                            </item>
+                            <item name="arima">
+<subset>
+    <item name="theta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+    <item name="btheta">
+        <params>
+            <coef/>
+        </params>
+    </item>
+</subset>
+                            </item>
+                            <item name="automdl">
+<subset>
+    <item name="enabled">
+        <boolean>true</boolean>
+    </item>
+</subset>
+                            </item>
+                            <item name="regression">
+<subset>
+    <item name="tradingdays">
+        <subset>
+            <item name="option">
+                <string>WorkingDays</string>
+            </item>
+            <item name="leapyear">
+                <string>LeapYear</string>
+            </item>
+            <item name="holidays">
+                <string>Norsk_kalender</string>
+            </item>
+            <item name="test">
+                <string>Remove</string>
+            </item>
+        </subset>
+    </item>
+    <item name="outliers">
+        <strings>
+            <items>TC.2017-09-01 LS.2021-02-01 LS.2021-01-01 LS.2020-12-01 LS.2020-11-01 LS.2020-10-01 LS.2020-09-01 LS.2020-08-01 LS.2020-07-01 LS.2020-06-01 LS.2020-05-01 LS.2020-04-01 LS.2020-03-01 LS.2021-06-01 LS.2021-05-01 LS.2021-04-01 LS.2021-03-01</items>
+        </strings>
+    </item>
+</subset>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="x11">
+                        <subset>
+                            <item name="mode">
+<string>Multiplicative</string>
+                            </item>
+                            <item name="trendma">
+<integer>9</integer>
+                            </item>
+                            <item name="seasonalma">
+<strings>
+    <items>S3X5</items>
+</strings>
+                            </item>
+                        </subset>
+                    </item>
+                    <item name="benchmarking">
+                        <subset/>
+                    </item>
+                </subset>
+            </item>
+        </subset>
+    </item>
+</informationSet>
