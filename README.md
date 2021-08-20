@@ -1,2 +1,2 @@
-# sRepo to demonstrate an issue for Jdemetra+-helpdesk
+# Repo to demonstrate an issue for Jdemetra+-helpdesk
 
